@@ -47,10 +47,6 @@
                 ContentSlider.next();
             });
 
-            $(document.body).hammer().on('tap', function () {
-                ContentSlider.next();
-            });
-
             // Swipe right listener for touch screens
             $(document.body).hammer().on('swiperight', function () {
                 ContentSlider.prev();
