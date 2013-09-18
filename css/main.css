@@ -361,7 +361,7 @@ h1 {
     display: none;
 }
 
-.ctrl:hover, .ctrl:active {
+.ctrl:active {
     opacity: 0.7;
 }
 
