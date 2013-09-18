@@ -43,12 +43,16 @@
             });
 
             // Swipe left listener for touch screens
-            ContentSlider.$container.hammer().on('swipeleft', function () {
+            $(document.body).hammer().on('swipeleft', function () {
+                ContentSlider.next();
+            });
+
+            $(document.body).hammer().on('tap', function () {
                 ContentSlider.next();
             });
 
             // Swipe right listener for touch screens
-            ContentSlider.$container.hammer().on('swiperight', function () {
+            $(document.body).hammer().on('swiperight', function () {
                 ContentSlider.prev();
             });
 
