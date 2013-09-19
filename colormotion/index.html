@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="HTML5 experiment with getUserMedia usage"/>
+    <title>Colormotion</title>
+    <link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="image_src" href="i/soc_img.png" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<a title="How about to fork?" target="_blank" href="https://github.com/VodkaBears/colormotion">
+    <img class="github_ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
+         alt="Fork me on GitHub">
+</a>
+
+<video class="webcam" id="webcam" width="480" height="360" autoplay></video>
+<canvas class="canvas_bg" id="blended"></canvas>
+
+<div class="central">
+    <section class="section" id="startSection">
+        <h1 class="app_title" id="appTitle"><span>Colormotion</span></h1>
+        <button class="round_button" id="startButton"><span>Start</span></button>
+    </section>
+    <section class="section" id="notSupportedSection">
+        <img class="section-img" src="i/firefox.png" alt="Firefox" />
+        <img class="section-img" src="i/chrome.png" alt="Chrome" />
+        <br />
+        <span class="section-text">
+            Your browser doesn’t support some features,<br />
+            please try it with Firefox or Chrome.
+        </span>
+    </section>
+    <section class="section" id="webcamUnreadySection">
+        <img class="section-img" src="i/webcam.png" alt="Webcam" /><br />
+        <span class="section-text">
+            Something wrong with your webcam.<br />
+            Make sure it’s connected.
+        </span>
+    </section>
+</div>
+
+<div class="add_info">
+    <span>
+        Made with <a target="_blank" title="Motion detection library" href="https://github.com/VodkaBears/MotionDetector.js">MotionDetector.js</a>
+    </span>
+</div>
+
+<div class="addthis_toolbox addthis_default_style social">
+    <a class="social-button addthis_button_facebook">
+        <img src="i/fb.png" alt="facebook"/>
+    </a>
+    <a class="social-button addthis_button_twitter">
+        <img src="i/tt.png" alt="twitter"/>
+    </a>
+    <a class="social-button addthis_button_google_plusone_share">
+        <img src="i/g+.png" alt="google+"/>
+    </a>
+    <a class="social-button addthis_button_expanded">
+        <img src="i/more.png" alt="+"/>
+    </a>
+</div>
+
+<script type="text/javascript" src="js/MotionDetector.js"></script>
+<script type="text/javascript" src="js/Check.js"></script>
+<script type="text/javascript" src="js/StackBlur.js"></script>
+<script type="text/javascript" src="js/App.js"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5061e6bb0b77747d"></script>
+<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>

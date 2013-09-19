@@ -1,0 +1,185 @@
+/*Common definitions(begin)*/
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;	
+}
+
+body{
+    font-size: 0.625em;
+    font-family: 'PT Sans', sans-serif;
+
+    background: #b4b4b4;
+}
+
+a{
+    color: #000;
+}
+
+    a img{
+        border: none;
+    }
+
+a:hover{
+    text-decoration: none;
+}
+/*Common definitions(end)*/
+
+/*Github ribbon(begin)*/
+.github_ribbon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    z-index: 1000;
+}
+/*Github ribbon(end)*/
+
+/*Webcam video(begin)*/
+.webcam{
+    display: none;
+}
+/*Webcam video(end)*/
+
+/*Canvas background(begin)*/
+.canvas_bg{
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background: #b4b4b4;
+}
+/*Canvas background(end)*/
+
+/*Central block(begin)*/
+.central{
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+
+    width: 100%;
+}
+/*Central block(end)*/
+
+/*Colored title(begin)*/
+.app_title{
+    font-family: 'Finger Paint', cursive;
+    font-size: 1em;
+
+    margin: 0 0 0.1em 0;
+
+    color: #ff0000;
+}
+
+    .app_title span{
+        font-size: 14em;
+    }
+/*Colored title(end)*/
+
+/*Rounded button(begin)*/
+.round_button{
+    font-size: 1em;
+    font-family: 'Finger Paint', cursive;
+
+    width: 13em;
+    height: 13em;
+
+    border-radius: 7.5em;
+    border: none;
+
+    cursor: pointer;
+
+    color: #f0f0f0;
+    background: #646464;
+    background: -moz-radial-gradient(center, ellipse cover, #646464 0%, #343434 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #646464 0%,#343434 100%);
+    background: -o-radial-gradient(center, ellipse cover, #646464 0%,#343434 100%);
+    background: radial-gradient(ellipse at center, #646464 0%,#343434 100%);
+    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.75);
+}
+
+    .round_button span{
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+.round_button:hover{
+    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.5);
+    background: -moz-radial-gradient(center, ellipse cover, #545454 0%, #343434 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #545454 0%,#343434 100%);
+    background: -o-radial-gradient(center, ellipse cover, #545454 0%,#343434 100%);
+    background: radial-gradient(ellipse at center, #545454 0%,#343434 100%);
+}
+
+.round_button:active{
+    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.25);
+    background: -moz-radial-gradient(center, ellipse cover, #444444 0%, #343434 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #444444 0%,#343434 100%);
+    background: -o-radial-gradient(center, ellipse cover, #444444 0%,#343434 100%);
+    background: radial-gradient(ellipse at center, #444444 0%,#343434 100%);
+}
+
+/*Rounded button(end)*/
+
+/*Section(begin)*/
+.section{
+    display: none;
+
+    text-align: center;
+}
+
+    .section-text{
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+/*Section(end)*/
+
+/*Addition information(begin)*/
+.add_info{
+    position: absolute;
+
+    bottom: 1.9em;
+    left: 1.8em;
+    z-index: 1000;
+}
+
+.add_info span{
+    font-size: 1.4em;
+}
+/*Addition information(end)*/
+
+/*Social block(begin)*/
+.social{
+    position: absolute;
+    bottom: 1.3em;
+    right: 1.8em;
+    z-index: 1000;
+}
+
+    .social-button{
+        margin-left: 0.6em;
+
+        text-decoration: none;
+    }
+
+        .social-button img{
+            width: 2.5em;
+
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+    .social-button:first-child{
+        margin-left: 0;
+    }
+
+    .social-button:hover{}
+
+        .social-button:hover img{
+            width: 3em;
+        }
+/*Social block(end)*/
