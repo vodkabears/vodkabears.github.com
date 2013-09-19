@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Customization">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+        <title>Galereya. Customization.</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Scada:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/jquery.galereya.css">
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/jquery.galereya.ie.css">
+        <![endif]-->
+        <style>
+            .galereya.ex1 .galereya-top { display: none; }
+
+            .galereya.ex1 .galereya-grid { top: 0; }
+
+            .galereya.ex1 .galereya-cell {
+                width: 80px;
+                padding: 0;
+
+                -webkit-transition: -webkit-transform 0.3s ease-out;
+                -moz-transition: -moz-transform 0.3s ease-out;
+                -o-transition: -o-transform 0.3s ease-out;
+                transition: transform 0.3s ease-out;
+            }
+            .galereya.ex1 .galereya-cell:hover {
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                transform: scale(1.5);
+                -webkit-box-shadow: 0 0 2em #000;
+                box-shadow: 0 0 2em #000;
+            }
+            .galereya.ex1 .galereya-cell-img { width: 80px; }
+
+            .galereya.ex1 .galereya-cell-desc { display: none; }
+
+            .galereya.ex1 .galereya-cell-overlay {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .galereya-slider.ex1 {
+                opacity: 0;
+
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translate(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+                -webkit-transition: opacity .5s ease-out;
+                -moz-transition: opacity .5s ease-out;
+                transition: opacity .5s ease-out;
+                -o-transition: none;
+            }
+
+            .galereya-slider.ex1.opened { opacity: 100; }
+
+            .galereya-slider.ex1 .galereya-slider-desc {
+                font-size: 12pt;
+
+                top: 0;
+                bottom: auto;
+                left: 0;
+
+                width: 200px;
+            }
+
+            .galereya-slider.ex1 .galereya-slider-play,
+            .galereya-slider.ex1 .galereya-slider-close {
+                top: auto;
+                bottom: 0;
+            }
+
+            .galereya-slider.ex1 .galereya-slider-slide {
+                opacity: 100;
+
+                -webkit-transition: opacity .5s ease-out;
+                -moz-transition: opacity .5s ease-out;
+                transition: opacity .5s ease-out;
+                -o-transition: none;
+
+                background: #000 url(img/wild_oliva.png);
+            }
+
+            .galereya-slider.ex1 .galereya-slide-img {
+                -webkit-box-shadow: 0 0 1em #000;
+                box-shadow: 0 0 2em #000;
+            }
+
+            .galereya-slider.ex1 .galereya-slider-slide.next {
+                opacity: 0;
+
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translate(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+            }
+            .galereya-slider-slide.current {}
+            .galereya-slider-slide.prev {}
+
+            @media only screen and (min-width: 601px) {
+                .galereya.ex1 .galereya-cell { width: 200px; }
+
+                .galereya.ex1 .galereya-cell-img { width: 200px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ex1"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/jquery.galereya.min.js"></script>
+        <script>
+            $(function() {
+                $('#ex1').galereya({
+                    wave: false,
+                    modifier: 'ex1',
+                    spacing: 5,
+                    load: function(next) {
+                        $.getJSON('images.json', function(data) {
+                            next(data);
+                        });
+                    }
+                });
+            });
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            var _gaq=[['_setAccount','UA-40540506-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src='//www.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
