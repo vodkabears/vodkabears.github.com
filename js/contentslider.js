@@ -93,7 +93,7 @@
 
             ContentSlider.isBlocked = true;
             (function ($prev, $next) {
-                $next.removeClass('invisible').css('opacity', '0').animate({
+                $next.css('opacity', '0').removeClass('invisible').animate({
                     opacity: 1
                 }, 600, function () {
                     ContentSlider.isBlocked = false;
