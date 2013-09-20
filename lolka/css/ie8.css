@@ -1,0 +1,33 @@
+.proj_buttons-button{
+    margin: 0 0.8em 0 0;
+
+    behavior: url(css/PIE.htc);
+}
+
+.form input{
+    box-shadow: 0.2em 0.2em 0.3em #C8C4C3;
+    behavior: url(css/PIE.htc);
+}
+
+.form button{
+    box-shadow: 0.2em 0.2em 0.3em #C8C4C3;
+    -pie-background: linear-gradient(#a0a0a0, #8c8c8c);
+    behavior: url(css/PIE.htc);
+}
+
+.form button:hover{
+    -pie-background: linear-gradient(#969696, #8c8c8c);
+    box-shadow: 0.2em 0.2em 0.3em #DCD5D4;
+    behavior: url(css/PIE.htc);
+}
+
+.form button:active{
+    background: #8c8c8c;
+    box-shadow: 0.2em 0.2em 0.3em #EBE4E3;
+    behavior: url(css/PIE.htc);
+}
+
+.form-success{
+    box-shadow: 0.3em 0.3em 0.5em #C8C4C3;
+    behavior: url(css/PIE.htc);
+}

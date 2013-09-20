@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Умное здоровье</title>
+	<link rel="shortcut icon" href="i/fav/sm.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css"/>
+	
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+    <![endif]-->
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/polyfills.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="proj_buttons">
+        <a href="http://умноездоровье.рф" class="proj_buttons-button current" title="Умное Здоровье">
+            <img src="i/sm-icon.png" alt="Умное здоровье"/>
+        </a><a href="http://мояаптечка.рф" class="proj_buttons-button" title="Моя аптечка">
+            <img src="i/medkit-icon.png" alt="Моя аптечка"/>
+        </a><a href="http://мойдоктор.рф" class="proj_buttons-button" title="Мой доктор">
+            <img src="i/doctor-icon.png" alt="Мой доктор"/>
+        </a><a href="http://мояпрофилактика.рф" class="proj_buttons-button" title="Моя профилактика">
+            <img src="i/prof-icon.png" alt="Моя профилактика"/>
+        </a><a href="http://мойздоровыймалыш.рф" class="proj_buttons-button" title="Мой здоровый малыш">
+            <img src="i/child-icon.png" alt="Мой здоровый малыш"/>
+        </a>
+    </div>
+</header>
+
+<div class="main">
+    <table class="main-layout">
+        <tr>
+            <td class="main-layout-left" rowspan="2">
+                <img class="logo" src="i/smarthealth.png" alt="Умное здоровье"/>
+            </td>
+            <td class="main-layout-right_top">
+                <div class="about">
+                    <span>Проект "Умное здоровье" объединяет «кольцо» различных сервисов и проектов, связанных базовой идеей предоставления услуг в области медицины и профилактики заболеваний.</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="main-layout-right_bottom">
+                <form action="http://54.235.254.242:9000/" class="form" novalidate>
+                    <div class="form-inputs">
+                        <input type="hidden" name="topic" value="smarthealth" />
+                        <input name="email" type="email" placeholder="Введите ваш e-mail"/><br/>
+                        <button type="submit">Уведомить об открытии</button>
+                    </div>
+                    <div class="form-success">
+                        <span>Спасибо за интерес!<br />Мы обязательно уведомим вас, когда сервис откроется!</span>
+                    </div>
+                    <div class="form-loader">
+                        <img src="i/preloader.gif" alt="preloader"/>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<footer class="footer">
+    <a target="_blank" href="http://smarthealth.ru" title="Smart Health" class="cr">
+        <span class="cr-text">Smart Health Rus</span>
+    </a>
+</footer>
+
+<script type="text/javascript" src="js/retina.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter18836650 = new Ya.Metrika({id:18836650,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/18836650" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
