@@ -167,7 +167,7 @@ body {
     transition: background 0.3s ease-out;
 }
 
-.show_button:hover, .show_button:hover {
+.show_button:hover, .show_button:active {
     background: #e74c3c;
 }
 
