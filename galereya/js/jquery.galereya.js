@@ -32,10 +32,8 @@
             slides = [],
             htmlOverflow, bodyOverflow,
             gridW,
-            gridH,
             rowCount = 0,
             cellW = 300,
-            cellH = 300,
             scrollTop,
             loadTimeout,
             currentSlideIndex,
@@ -189,7 +187,6 @@
          */
         var calcParams = function () {
             cellW = $cells.width();
-            cellH = $cells.height();
 
             rowCount = Math.floor(self.width() / (cellW + self.options.spacing));
             if (rowCount < 1) {
@@ -197,7 +194,6 @@
             }
 
             gridW = rowCount * cellW + (rowCount - 1) * self.options.spacing;
-            gridH = Math.ceil($imgs.length / rowCount) * cellH;
         };
 
         /**
@@ -480,7 +476,6 @@
             }
             $currentImg.css('margin-top', ($(window).height() - $currentImg.height()) / 2);
             $grid.width(gridW);
-            $grid.height(gridH);
 
             for (var i = 0, len = visibleCells.length; i < len; i++) {
                 placeCell(visibleCells[i], i);

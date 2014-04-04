@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Product">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Responsive, easily customizable jquery gallery with a masonry layout." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galereya. jQuery gallery.</title>
+
+        <!--Facebook Metadata /-->
+        <meta property="og:url" content="http://vodkabears.github.io/galereya/" />
+        <meta property="og:title" content="Galereya. jQuery gallery." />
+        <meta property="og:description" content="Responsive, easily customizable jquery gallery with a masonry layout." />
+        <meta property="og:image" content="http://vodkabears.github.io/galereya/img/soc_img.png" />
+
+        <!-- Google+ Metadata /-->
+        <meta itemprop="url" content="http://vodkabears.github.io/galereya/" />
+        <meta itemprop="name" content="Galereya. jQuery gallery." />
+        <meta itemprop="description" content="Responsive, easily customizable jquery gallery with a masonry layout." />
+        <meta itemprop="image" content="http://vodkabears.github.io/galereya/img/soc_img.png" />
+
+        <link href='http://fonts.googleapis.com/css?family=Scada:400,400italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/rainbow.css" />
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie.css" />
+        <![endif]-->
+        <link rel="image_src" href="http://vodkabears.github.io/galereya/img/soc_img.png" />
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <script src="js/modernizr.min.js"></script>
+    </head>
+    <body>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#intro"><span>Download</span></a></li>
+                <li><a href="#browsers"><span>Browser Compatibility</span></a></li>
+                <li><a href="#start"><span>Rapid start</span></a></li>
+                <li><a href="#options"><span>Options</span></a></li>
+                <li class="last"><a href="#methods"><span>Methods</span></a></li>
+                <li class="last"><a href="#customization"><span>Customization</span></a></li>
+            </ul>
+            <a class="nav-toggle" id="navToggle">
+                <div class="nav-toggle-img"></div>
+            </a>
+        </nav>
+        <div class="main" id="main">
+            <a href="https://github.com/VodkaBears/galereya">
+                <img style="position: absolute; top: 0; right: 0; border: 0;"
+                     src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+                     alt="Fork me on GitHub">
+            </a>
+            <article class="article" id="intro">
+                <h1>Galereya</h1>
+                <p>
+                    Responsive, easily customizable jquery
+                    gallery with a masonry layout.
+                </p>
+                <div class="article-row">
+                    <a href="https://github.com/VodkaBears/galereya/archive/latest.zip" class="btn orange"><span>Download</span></a>
+                    &nbsp;&nbsp;
+                    <a target="_blank" href="demo.html" class="btn"><span>Demo</span></a>
+                </div>
+                <div class="article-row">
+                    <!-- AddThis Button BEGIN -->
+                    <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4dd797b06396480a"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+                    <script>
+                        var addthis_config = {
+                            "data_track_addressbar": false,
+                            "data_track_clickback": false
+                        };
+                        var addthis_share = {
+                            url: "http://vodkabears.github.io/galereya/",
+                            title: "Galereya. jQuery gallery.",
+                            description: "Responsive, easily customizable jquery gallery with a masonry layout."
+                        };
+                    </script>
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dd797b06396480a"></script>
+                    <!-- AddThis Button END -->
+                </div>
+                <div class="article-row">
+                    <div class="preview_img"></div>
+                </div>
+            </article>
+            <article class="article" id="browsers">
+                <h2>Browser compatibility</h2>
+                <div class="article-row">
+                    <div class="browsers_img"></div>
+                </div>
+                <div class="article-row">
+                    <p>
+                        Works on Chrome, Safari, Firefox,
+                        Opera(turned off some CSS animations),
+                        IE7+(Graceful degradation), Android
+                        browser, Chrome mobile, Firefox mobile,
+                        Safari on iOS and etc.
+                    </p>
+                    <br />
+                    <p>
+                        Galereya effects and browser
+                        compatibility depends on your custom
+                        CSS styles a lot!
+                    </p>
+                </div>
+            </article>
+            <article class="article" id="start">
+                <h2>Rapid start</h2>
+                <div class="article-row">
+                    <pre class="code">
+                        <code data-language="javascript">
+$('#gal1').galereya({
+    load: function(next) {
+        $.getJSON('images.json',
+        function(data) {
+            // var data = [{"lowsrc":"upload\/thumbnails\/5165b70278e0e2.80829014.jpg","fullsrc":"upload\/5165b70278e0e2.80829014.jpg","description":"Mehmet Dere","category":"drawing"}, ...]
+            next(data);
+        });
+    }
+});
+                        </code>
+                    </pre>
+                    <p>or this way:</p>
+                    <pre class="code">
+                        <code data-language="html">
+&lsaquo;div id="gal1"&rsaquo;
+    &lsaquo;img src="path/to/thumbnail"
+        alt="Title here"
+        title="Or here(more priority)"
+        data-desc="some description"
+        data-category="image category here"
+        data-fullsrc="path/to/full/image."
+    /&rsaquo;
+                                    ...
+    &lsaquo;img src="imgs/thumbnails/image42.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="imgs/image42.jpg"
+    /&rsaquo;
+&lsaquo;/div&rsaquo;
+                        </code>
+                    </pre>
+                    <pre class="code">
+                        <code data-language="javascript">
+$('#gal1').galereya();
+                        </code>
+                    </pre>
+
+                </div>
+                <div class="article-row">
+                    <a class="btn orange" href="start.html" target="_blank"><span>View</span></a>
+                </div>
+            </article>
+            <article class="article" id="options">
+                <h2>Options</h2>
+                <div class="article-row">
+                    <pre class="code">
+                        <code data-language="javascript">
+$('#galleryherepls').galereya({
+    // spacing between cells of the masonry grid
+    spacing: 0,
+
+    // waving visual effect
+    wave: true,
+
+    // waving visual effect timeout duration
+    waveTimeout: 300,
+
+    // special CSS modifier for the gallery
+    modifier: '',
+
+    // speed of the slide show
+    slideShowSpeed: 10000,
+
+    // speed of appearance of cells
+    cellFadeInSpeed: 200,
+
+    // the name of the general category
+    noCategoryName: 'all',
+
+    // set to true, if you don't want to show the slider on a cell click.
+    disableSliderOnClick: false,
+
+    // loading of images from JS. Just pass data to the callback 'next'.
+    load: function(next) {
+         //Data structure example
+         //var data = [{"lowsrc":"upload\/thumbnails\/5165b70278e0e2.80829014.jpg","fullsrc":"upload\/5165b70278e0e2.80829014.jpg","description":"Mehmet Dere","category":"drawing"}]
+         next(data);
+    },
+
+    //Cell click handler. Works even when the 'disableSliderOnClick' property is true.
+    onCellClick: function(e) {}
+});
+                        </code>
+                    </pre>
+                </div>
+            </article>
+            <article class="article" id="methods">
+                <h2>Methods</h2>
+                <div class="article-row">
+                    <div>
+                        <pre class="code">
+                            <code data-language="javascript">
+var gallery = $('#gal1').galereya();
+gallery.openSlider(5);
+                            </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <pre class="code">
+                            <code data-language="javascript">
+// Opens slider. `visibleIndex` parameter is an index of a set of visible cells.
+gallery.openSlider(5);
+
+// Yes, close it.
+gallery.closeSlider();
+
+// Show a special category of images. `categoryName` is a name of a category.
+gallery.changeCategory(categoryName)
+
+// Start slide show.
+gallery.startSlideShow();
+
+// Stop slide show.
+gallery.stopSlideShow();
+
+// Go to the next slide, if slider is opened.
+gallery.nextSlide();
+
+// Go to the previous slide, if slider is opened.
+gallery.prevSlide();
+
+//Load additional images to the galereya. `data` is an object like in the load function.
+loadMore([{"lowsrc":"upload\/thumbnails\/5165b70278e0e2.80829014.jpg","fullsrc":"upload\/5165b70278e0e2.80829014.jpg","description":"Mehmet Dere","category":"drawing"}, ...]);
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </article>
+            <article class="article" id="customization">
+                <h2>Customization example</h2>
+                <div class="article-row">
+                    <p>
+                        <b>Note:</b> Don't set animations of cells using size properties like width, height, margins, paddings, instead of this use transform property.
+                        I recommend you to use an animation of a transform property everywhere when it is possible, it is more faster, safer and more modern.
+                    </p>
+                    <br />
+                    <p>
+                        For customizing Galereya you can start writing your styles from scratch or use modifier:
+                    </p>
+                    <pre class="code">
+                        <code data-language="css">
+.galereya.ex1 {
+    max-width: 1400px;
+    margin: auto;
+}
+
+    .galereya.ex1 .galereya-top { display: none; }
+
+    .galereya.ex1 .galereya-grid { top: 0; }
+
+    .galereya.ex1 .galereya-cell {
+        width: 80px;
+        padding: 0;
+
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -moz-transition: -moz-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+    .galereya.ex1 .galereya-cell:hover {
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-box-shadow: 0 0 2em #000;
+        box-shadow: 0 0 2em #000;
+    }
+
+        .galereya.ex1 .galereya-cell-img { width: 80px; }
+
+        .galereya.ex1 .galereya-cell-desc { display: none; }
+
+        .galereya.ex1 .galereya-cell-overlay {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+.galereya-slider.ex1 {
+    opacity: 0;
+
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translate(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+    -o-transition: none;
+}
+.galereya-slider.ex1.opened { opacity: 100; }
+
+    .galereya-slider.ex1 .galereya-slider-desc {
+        font-size: 12pt;
+
+        top: 0;
+        bottom: auto;
+        left: 0;
+
+        width: 200px;
+    }
+
+    .galereya-slider.ex1 .galereya-slider-play,
+    .galereya-slider.ex1 .galereya-slider-close {
+        top: auto;
+        bottom: 0;
+    }
+
+    .galereya-slider.ex1 .galereya-slider-slide {
+        opacity: 100;
+        background: #000 url(img/wild_oliva.png);
+        -webkit-transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        transition: opacity .5s ease-out;
+        -o-transition: none;
+    }
+    .galereya-slider.ex1 .galereya-slider-slide.next {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translate(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .galereya-slider.ex1 .galereya-slider-slide.current {}
+    .galereya-slider.ex1 .galereya-slider-slide.prev {}
+
+
+        .galereya-slider.ex1 .galereya-slide-img {
+            -webkit-box-shadow: 0 0 1em #000;
+            box-shadow: 0 0 2em #000;
+        }
+
+
+@media only screen and (min-width: 601px) {
+    .galereya.ex1 .galereya-cell { width: 150px; }
+        .galereya.ex1 .galereya-cell-img { width: 150px; }
+}
+                        </code>
+                    </pre>
+                    <pre class="code">
+                        <code data-language="javascript">
+$('#ex1').galereya({
+    wave: false,
+    modifier: 'ex1',
+    spacing: 5,
+    disableSliderOnClick: true,
+    load: function(next) {
+        $.getJSON('images.json', function(data) {
+            next(data);
+        });
+    }
+});
+                        </code>
+                    </pre>
+                </div>
+                <div class="article-row">
+                    <a class="btn orange" href="custom.html" target="_blank"><span>View</span></a>
+                </div>
+            </article>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/rainbow.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics -->
+        <script>
+            var _gaq=[['_setAccount','UA-40540506-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
