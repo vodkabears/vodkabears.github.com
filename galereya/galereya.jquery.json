@@ -1,0 +1,32 @@
+{
+    "name": "galereya",
+    "title": "Galereya",
+    "description": "Responsive, easily customizable gallery with a masonry layout",
+    "keywords": [
+        "gallery",
+        "responsive",
+        "flexible",
+        "masonry",
+        "awesome",
+        "slider",
+        "customizable"
+    ],
+    "version": "0.9.93",
+    "author": {
+        "name": "VodkaBears",
+        "url": "https://github.com/VodkaBears"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/VodkaBears/galereya/master/LICENSE.md"
+        }
+    ],
+    "homepage": "http://vodkabears.github.io/galereya/",
+    "docs": "http://vodkabears.github.io/galereya/",
+    "demo": "http://vodkabears.github.io/galereya/demo.html",
+    "download": "https://github.com/VodkaBears/galereya/archive/latest.zip",
+    "dependencies": {
+        "jquery": ">=1.9.0"
+    }
+}
