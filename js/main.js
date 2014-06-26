@@ -9,9 +9,6 @@
 
         // init canvas background
         BG.init();
-
-        //stop pace
-        Pace.stop();
     };
 
     var resizeTimeout;
