@@ -59,7 +59,7 @@
                 canvas.width = W;
                 canvas.height = H;
 
-                mp = 50; //max particles
+                mp = Math.floor(W * 50/1920); //max particles
                 particles = [];
                 for (var i = 0; i < mp; i++) {
                     particles.push({
@@ -80,6 +80,7 @@
                 H = window.innerHeight;
                 canvas.width = W;
                 canvas.height = H;
+                mp = Math.floor(W * 50/1920); //max particles
 
                 particles = [];
                 for (var i = 0; i < mp; i++) {
