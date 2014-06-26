@@ -5,323 +5,34 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-        <title>VodkaBears</title>
-        <meta name="description" content="VodkaBears. Ilya Makarov. Front-end developer.">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VodkaBears. Makarov Ilya.</title>
+        <meta name="description" content="Makarov Ilya. VodkaBears. Personal page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/responsiveslides.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/respond.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <div class="loading_screen" id="loadingScreen">
-            <div class="loading_screen-loader"></div>
-            <div class="loading_screen-overlay"></div>
-        </div>
-
-        <!-- Content -->
-        <div class="container" id="container">
-            <section class="slide" data-name="aboutme">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>About me</h1>
-                    </div>
-                    <div class="slide-info-block left">
-                        <p>
-                            Hello. I'm Ilya Makarov, Saint-P, Russia.
-                            I am a still a student of SPbNRU ITMO.
-                            I worked with lots of programming languages and technologies,
-                            but nowadays i create websites, mostly front-end, sometimes web-design, sometimes back-end.
-                        </p>
-                        <p>
-                            Check out some of my works, on the next pages.
-                        </p>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <a target="_blank" href="https://github.com/VodkaBears" class="icon github"></a>
-                        <a target="_blank" href="mailto:dfrost.00@gmail.com" class="icon mail"></a>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="galereya">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>Galereya</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/galereya/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/galereya/slide2.jpg" alt="slide 2"></li>
-                            <li><img src="img/galereya/slide3.jpg" alt="slide 3"></li>
-                            <li><img src="img/galereya/slide4.jpg" alt="slide 4"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Responsive, easily customizable, hardware accelerated jquery gallery with a masonry layout.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="mymedkit">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>"Моя Аптечка"</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/mymedkit/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/mymedkit/slide2.jpg" alt="slide 2"></li>
-                            <li><img src="img/mymedkit/slide3.jpg" alt="slide 3"></li>
-                            <li><img src="img/mymedkit/slide4.jpg" alt="slide 4"></li>
-                            <li><img src="img/mymedkit/slide5.jpg" alt="slide 5"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Service of SMS-remindings to
-                            medication. You can simply fill out the step by step dynamic form on the site from any device and wait for remindings.
-                            I made front-end for this project.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="mydoctor">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>"Мой Доктор" launching page</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/mydoctor/slide1.jpg" alt="slide 1"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Launching page of the medical startup for clinics and patients.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="mychild">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>"Мой Здоровый Малыш" launching page</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/mychild/slide1.jpg" alt="slide 1"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Launching page of the medical startup for parents and their children.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="myprophy">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>"Моя Профилактика" launching page</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/myprophy/slide1.jpg" alt="slide 1"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Launching page for another one medical startup.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="smarthealth">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>SmartHealth</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/smarthealth/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/smarthealth/slide2.jpg" alt="slide 2"></li>
-                            <li><img src="img/smarthealth/slide3.jpg" alt="slide 3"></li>
-                            <li><img src="img/smarthealth/slide4.jpg" alt="slide 4"></li>
-                            <li><img src="img/smarthealth/slide5.jpg" alt="slide 5"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Website for the "SmartHealth Rus" company. Wordpress was used as a website backend to update news.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="colormotion">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>Colormotion</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/colormotion/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/colormotion/slide2.jpg" alt="slide 2"></li>
-                            <li><img src="img/colormotion/slide3.jpg" alt="slide 3"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            This is an HTML5 experiment.
-                            It detects your motion to generate versicolored particles on the background with a blur.
-                        </p>
-                        <p>
-                            Made with MotionDetector.js
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="motiondetector">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>MotionDetector.js</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/motiondetector/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/motiondetector/slide2.jpg" alt="slide 1"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Javascript library for a motion detection.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="monopolia">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>Monopolia</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/monopolia/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/monopolia/slide2.jpg" alt="slide 2"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            HTML5 multiplayer game. It had a Node.js backend,
-                            used websockets for a data transfer,
-                            Redis as a session storage and MongoDB as a database.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="acidvalue">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>AcidValue</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/acidvalue/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/acidvalue/slide2.jpg" alt="slide 1"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            HTML5 games portal with a node.js backend.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="internet-vibori">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>Internet-vibori</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/internet-vibori/slide1.jpg" alt="slide 1"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Internet elections to the State Duma.
-                            Online voting throw VK social network.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="slide" data-name="fixmeplz">
-                <div class="slide-overlay"></div>
-                <div class="slide-info">
-                    <div class="slide-info-block topleft">
-                        <h1>FIX ME PLZ</h1>
-                    </div>
-                    <div class="slide-info-block slider topright">
-                        <ul class="rslides">
-                            <li><img src="img/fixmeplz/slide1.jpg" alt="slide 1"></li>
-                            <li><img src="img/fixmeplz/slide2.jpg" alt="slide 2"></li>
-                            <li><img src="img/fixmeplz/slide3.jpg" alt="slide 3"></li>
-                        </ul>
-                    </div>
-                    <div class="slide-info-block bottomleft">
-                        <p>
-                            Russian entertainment portal. Was closed due to numerous problems and conflicts.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="ctrls">
-            <div class="ctrl left" id="leftCtrl">
-                <div class="ctrl-pic">
-                    <div class="icon arrow_left"></div>
-                </div>
-            </div>
-            <div class="ctrl right" id="rightCtrl">
-                <div class="ctrl-pic">
-                    <div class="icon arrow_right"></div>
-                </div>
-            </div>
-            <div class="ctrl first" id="toStartCtrl">
-                <div class="ctrl-pic">
-                    <span class="icon arrow_left_small"></span>
-                    <span>to the start</span>
+        <div class="container">
+            <div class="content">
+                <h1 class="title animated fadeInDown">Keep it simple</h1>
+                <h2 class="subtitle animated fadeInDown">Makarov Ilya. Developer.</h2>
+                <br><br>
+                <div class="links animated fadeInDown">
+                    <a class="icon github" target="_blank" href="https://github.com/VodkaBears"></a>
+                    <a class="icon brainstorage" target="_blank" href="http://brainstorage.me/solar/portfolio"></a>
+                    <a class="icon mail" href="mailto:dfrost.00@gmail.com"></a>
                 </div>
             </div>
         </div>
 
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/contentslider.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics -->
