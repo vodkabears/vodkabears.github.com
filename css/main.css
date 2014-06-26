@@ -117,7 +117,6 @@ html, body {
 
     text-align: center;
     overflow: auto;
-    overflow-x: hidden;
 }
 
 .container:after,
@@ -148,8 +147,8 @@ html, body {
     top: 0;
     left: 0;
 
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .title span:hover,
@@ -330,6 +329,7 @@ html, body {
     font-size: 0;
     cursor: pointer;
     border-radius: 50%;
+    background-clip: padding-box;
     text-align: center;
     color: #9fa5a9;
     -webkit-transition: all 0.2s;
@@ -366,11 +366,11 @@ html, body {
 
     pointer-events: none;
     border-radius: 50%;
+    background-clip: padding-box;
     content: '';
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-
     -webkit-box-shadow: 0 0 0 3px #9fa5a9;
     box-shadow: 0 0 0 3px #9fa5a9;
     -webkit-transition: all 0.2s;
