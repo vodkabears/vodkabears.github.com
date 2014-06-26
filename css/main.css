@@ -157,22 +157,23 @@ html, body {
     top: 0;
     left: 0;
 
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .title span:hover,
 .title span:active {
-    color: #c0392b;
     top: -10px;
+
+    color: #c0392b;
 }
 
 .subtitle {
     margin: 0;
 
     font-size: 24px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }

@@ -6,12 +6,21 @@
             ctx,
             W, H,
             mp, particles,
-            angle = 0;
+            angle = 0,
+            frame = 2;
 
         var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
             window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
         var animate = function () {
+            frame++;
+            if (frame > 2) {
+                frame = 0;
+            } else {
+                requestAnimationFrame(animate);
+                return;
+            }
+
             ctx.clearRect(0, 0, W, H);
 
             ctx.fillStyle = "rgba(169, 165, 159, 0.15)";
