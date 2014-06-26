@@ -70,7 +70,9 @@
                     });
                 }
 
-                animate();
+                if (requestAnimationFrame) {
+                    animate();
+                }
             },
 
             resize: function () {
