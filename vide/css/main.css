@@ -148,12 +148,12 @@ h2 {
 .center-container:after {
     content: '';
     height: 100%;
-    margin-left: -0.10em; /* To offset spacing. May vary by font */
+    margin-left: -0.25em; /* To offset spacing. May vary by font */
 }
 
 
 .center-block {
-    max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
+    max-width: 98%; /* Prevents issues with long content causes the content block to be pushed to the top */
     /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
 }
 
