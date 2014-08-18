@@ -408,6 +408,7 @@ html, body {
 .icon.github:before { background-image: url(../img/gh-icon.png);  }
 .icon.brainstorage:before { background-image: url(../img/bs-icon.png); }
 .icon.mail:before { background-image: url(../img/mail-icon.png) }
+.icon.twitter:before { background-image: url(../img/tt-icon.png) }
 
 .links {
     -webkit-animation-delay: 0.4s;
