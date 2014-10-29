@@ -1,11 +1,11 @@
 (function () {
     "use strict";
 
-    $(".title, .subtitle").lettering();
+    $(".interactive-title, .interactive-subtitle").lettering();
 
     window.onload = function () {
         // make content visible when loading stops.
-        $(".container").removeClass("hidden");
+        $(".page-container").removeClass("hidden");
 
         // init canvas background
         BG.init();

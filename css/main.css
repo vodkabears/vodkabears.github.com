@@ -96,6 +96,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*
+ * Global styles
+ */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -112,7 +117,11 @@ html, body {
     overflow: hidden;
 }
 
-#bg {
+/*
+ * Page layout
+ */
+
+.page-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +130,7 @@ html, body {
     background: #fafafa;
 }
 
-.container {
+.page-container {
     width: 100%;
     height: 100%;
 
@@ -129,30 +138,34 @@ html, body {
     overflow: auto;
 }
 
-.container:after,
-.content {
+.page-container:after,
+.page-content {
     display: inline-block;
     vertical-align: middle;
 }
 
-.container:after {
+.page-container:after {
     content: '';
     height: 100%;
     margin-left: -0.25em; /* To offset spacing. May vary by font */
 }
 
-.content {
+.page-content {
     max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
     /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
 }
 
-.title {
+/*
+ * Interactive title
+ */
+
+.interactive-title {
     margin: 0;
 
     font-size: 100px;
 }
 
-.title span {
+.interactive-title span {
     position: relative;
     top: 0;
     left: 0;
@@ -161,14 +174,18 @@ html, body {
     transition: all 0.2s;
 }
 
-.title span:hover,
-.title span:active {
+.interactive-title span:hover,
+.interactive-title span:active {
     top: -10px;
 
     color: #c0392b;
 }
 
-.subtitle {
+/*
+ * Interactive subtitle
+ */
+
+.interactive-subtitle {
     margin: 0;
 
     font-size: 24px;
@@ -178,8 +195,8 @@ html, body {
     animation-delay: 0.2s;
 }
 
-.subtitle span:hover,
-.subtitle span:active {
+.interactive-subtitle span:hover,
+.interactive-subtitle span:active {
     color: #c0392b;
 }
 
@@ -329,6 +346,10 @@ html, body {
     98% { left: 0; top: -10px; }
 }
 
+/*
+ * Icon
+ */
+
 .icon {
     position: relative;
     z-index: 1;
@@ -404,30 +425,25 @@ html, body {
     box-shadow: 0 0 0 6px rgba(192, 57, 43, 0.2);
 }
 
-.icon.behance:before { background-image: url(../img/be-icon.png); }
-.icon.github:before { background-image: url(../img/gh-icon.png);  }
-.icon.brainstorage:before { background-image: url(../img/bs-icon.png); }
-.icon.mail:before { background-image: url(../img/mail-icon.png) }
-.icon.twitter:before { background-image: url(../img/tt-icon.png) }
+.icon.of-behance:before { background-image: url(../img/be-icon.png); }
+.icon.of-github:before { background-image: url(../img/gh-icon.png);  }
+.icon.of-brainstorage:before { background-image: url(../img/bs-icon.png); }
+.icon.of-mail:before { background-image: url(../img/mail-icon.png) }
+.icon.of-twitter:before { background-image: url(../img/tt-icon.png) }
 
-.links {
+/*
+ * My contacts
+ */
+
+.contacts {
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
-.links a {
+.contacts a {
     text-decoration: none;
     margin: 0 15px;
 }
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -532,11 +548,11 @@ html, body {
 
 @media only screen and (max-width: 47.938em) {
     /* Style adjustments for viewports that meet the condition */
-    .title {
+    .interactive-title {
         font-size: 40px;
     }
 
-    .subtitle {
+    .interactive-subtitle {
         font-size: 16px;
     }
 
