@@ -1,0 +1,269 @@
+.fs-section {
+  position: relative;
+
+  overflow: hidden;
+
+  background: rgb(40, 18, 31);
+}
+
+.fs-section-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: inline-block;
+
+  width: 96%;
+  margin: auto;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fs-section-content h1,
+.fs-section-content h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+
+  margin: 0;
+  padding: 0;
+
+  opacity: 0.87;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.fs-section-content h1 {
+  font-size: 36px;
+}
+
+.fs-section-content h2 {
+  font-size: 30px;
+}
+
+.fs-section-content div {
+  margin-top: 25px;
+}
+
+.fs-section-content div a {
+  display: inline-block;
+
+  margin-left: 25px;
+}
+
+.fs-section-content div > a:first-child {
+  margin-left: 0;
+}
+
+.fs-section.cosmic:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+  animation: fs-section-cosmic-keyframes 10s 1s ease-in-out infinite;
+
+  background: url(../img/fs-section-cosmic-480x800.jpg) no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.fs-section.cosmic:after {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 120px;
+
+  content: "";
+
+  background: linear-gradient(to bottom, rgba(40, 18, 31, 0), rgba(40, 18, 31, 1));
+}
+
+.fs-section:nth-child(2) {
+  background: linear-gradient(to bottom, rgb(40, 18, 31), rgb(30, 18, 31));
+}
+
+.fs-section:nth-child(3) {
+  background: linear-gradient(to bottom, rgb(30, 18, 31), rgb(20, 18, 31));
+}
+
+.fs-section:nth-child(4) {
+  background: linear-gradient(to bottom, rgb(20, 18, 31), rgb(10, 18, 31));
+}
+
+.fs-section:nth-child(5) {
+  background: linear-gradient(to bottom, rgb(10, 18, 31), rgb(0, 18, 31));
+}
+
+@keyframes fs-section-cosmic-keyframes {
+  0% {
+    filter: blur(0) brightness(1);
+  }
+
+  20% {
+    filter: blur(5px) brightness(2);
+  }
+
+  40%,
+  100% {
+    filter: blur(0) brightness(1);
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .fs-section-content {
+    max-width: 1000px;
+  }
+
+  .fs-section-content h1 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  .fs-section-content h2 {
+    font-size: 50px;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (min-width : 1824px) {
+  .fs-section-content h1 {
+    font-size: 90px;
+    font-weight: 100;
+  }
+
+  .fs-section-content h2 {
+    font-size: 60px;
+    font-weight: 100;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-480x800@2x.jpg);
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-800x480.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-800x480@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (orientation: portrait) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-768x1024.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-768x1024@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (orientation: landscape) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-1024x768.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-1024x768@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-800x1280.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-800x1280@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (orientation: landscape) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-1280x800.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-1280x800@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (orientation: portrait) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-900x1600.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-900x1600@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1281px) and (orientation: landscape) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-1600x900.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-1600x900@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) and (orientation: portrait) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-1920x1080.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-1920x1080@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) and (orientation: portrait),
+only screen and (min-width: 1601px) and (orientation: landscape) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-1920x1080.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-1920x1080@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) and (orientation: portrait),
+only screen and (min-width: 1921px) and (orientation: landscape) {
+  .fs-section.cosmic:before {
+    background-image: url(../img/fs-section-cosmic-2560x1440.jpg);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fs-section.cosmic:before {
+      background-image: url(../img/fs-section-cosmic-2560x1440@2x.jpg);
+    }
+  }
+}
