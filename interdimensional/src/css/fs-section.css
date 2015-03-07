@@ -81,6 +81,15 @@
   background: linear-gradient(to bottom, rgba(40, 18, 31, 0), rgba(40, 18, 31, 1));
 }
 
+.fs-section.cosmic .icon.of-scrolling {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
 .fs-section:nth-child(2) {
   background: linear-gradient(to bottom, rgb(40, 18, 31), rgb(30, 18, 31));
 }
