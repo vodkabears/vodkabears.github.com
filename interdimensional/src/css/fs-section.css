@@ -90,6 +90,13 @@
   transform: translateX(-50%);
 }
 
+.fs-section.cosmic .socials {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+}
+
 .fs-section:nth-child(2) {
   background: linear-gradient(to bottom, rgb(40, 18, 31), rgb(30, 18, 31));
 }
