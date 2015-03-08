@@ -42,8 +42,6 @@ export default class Block {
 
     map.delete(this.elem);
     map.size === 0 && delete instances[this.namespace];
-
-    this.clearDOM();
   }
 
   /**
