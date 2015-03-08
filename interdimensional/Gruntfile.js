@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         dest: 'build/js/bundle.js'
       },
       'libs-css': {
-        src: ['build/css/bundle.css', 'libs/**/*.css'],
+        src: ['libs/**/*.css', 'build/css/bundle.css'],
         dest: 'build/css/bundle.css'
       }
     },
