@@ -1,0 +1,64 @@
+.notification {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+
+  position: fixed;
+  z-index: 100;
+  bottom: 10px;
+  left: 50%;
+
+  display: none;
+
+  width: 220px;
+  padding: 10px;
+
+  transform: translateX(-50%);
+  animation: notification-hidden-keyframes 1s ease-out;
+  text-align: center;
+
+  opacity: 0;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.54);
+}
+
+.notification.shown {
+  animation: notification-shown-keyframes 1s ease-out;
+
+  opacity: 1;
+}
+
+@media only screen and (min-width : 768px) {
+  .notification {
+    font-size: 20px;
+
+    right: 10px;
+    left: auto;
+
+    width: 160px;
+    padding: 20px;
+
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes notification-shown-keyframes {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes notification-hidden-keyframes {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
