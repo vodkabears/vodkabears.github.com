@@ -90,7 +90,7 @@
   transform: translateX(-50%);
 }
 
-.fs-section.cosmic .socials {
+.fs-section.cosmic .social-buttons {
   position: absolute;
   z-index: 10;
   top: 10px;
