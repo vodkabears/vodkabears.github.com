@@ -84,7 +84,7 @@
 .fs-section.cosmic .icon.of-scrolling {
   position: absolute;
   z-index: 10;
-  bottom: 10px;
+  bottom: 15px;
   left: 50%;
 
   transform: translateX(-50%);
