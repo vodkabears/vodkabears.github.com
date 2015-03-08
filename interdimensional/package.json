@@ -6,7 +6,8 @@
     "test": "node_modules/.bin/grunt test"
   },
   "browserify-shim": {
-    "wowjs": "global:WOW"
+    "wowjs": "global:WOW",
+    "interdimensional": "global:Interdimensional"
   },
   "devDependencies": {
     "babelify": "^5.0.3",

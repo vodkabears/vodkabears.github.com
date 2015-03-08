@@ -4,6 +4,7 @@
   "devDependencies": {
     "wowjs": "~1.0.3",
     "normalize-css": "~3.0.2",
-    "animate.css": "~3.2.1"
+    "animate.css": "~3.2.1",
+    "interdimensional": "https://github.com/VodkaBears/Interdimensional.git"
   }
 }
