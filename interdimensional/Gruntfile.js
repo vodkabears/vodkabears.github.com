@@ -13,7 +13,8 @@ module.exports = function(grunt) {
 
     babel: {
       options: {
-        sourceMap: true
+        sourceMap: true,
+        optional: ['spec.protoToAssign']
       },
       build: {
         files: [{
