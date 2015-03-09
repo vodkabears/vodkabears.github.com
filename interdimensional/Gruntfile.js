@@ -105,6 +105,13 @@ module.exports = function(grunt) {
       }
     },
 
+    imageEmbed: {
+      build: {
+        src: 'build/css/bundle.css',
+        dest: 'build/css/bundle.css'
+      }
+    },
+
     jscs: {
       gruntfile: {
         src: 'Gruntfile.js'
@@ -127,6 +134,34 @@ module.exports = function(grunt) {
       },
       options: {
         jshintrc: '.jshintrc'
+      }
+    },
+
+    svgmin: {
+      src: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['img/*.svg'],
+          dest: 'src/'
+        }],
+        options: {
+          js2svg: {
+            pretty: true
+          },
+          plugins: [
+            { removeComments: false },
+            { cleanupIDs: false }
+          ]
+        }
+      },
+      build: {
+        files: [{
+          expand: true,
+          cwd: 'build/',
+          src: ['img/*.svg'],
+          dest: 'build/'
+        }]
       }
     },
 
@@ -164,7 +199,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-githooks');
+  grunt.loadNpmTasks('grunt-image-embed');
   grunt.loadNpmTasks('grunt-jscs');
+  grunt.loadNpmTasks('grunt-svgmin');
 
   grunt.registerTask('test', [
     'jshint', 'jscs'
@@ -173,7 +210,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:build',
     'babel', 'browserify', 'concat:libs-js',
-    'csscomb', 'copy', 'concat:css', 'autoprefixer', 'concat:libs-css',
+    'csscomb', 'copy', 'concat:css', 'svgmin', 'imageEmbed', 'autoprefixer', 'concat:libs-css',
     'clean:temp'
   ]);
 
