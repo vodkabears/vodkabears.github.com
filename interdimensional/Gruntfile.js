@@ -210,7 +210,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:build',
     'babel', 'browserify', 'concat:libs-js',
-    'csscomb', 'copy', 'concat:css', 'svgmin', 'imageEmbed', 'autoprefixer', 'concat:libs-css',
+    'csscomb', 'copy', 'concat:css', 'svgmin:build', 'imageEmbed', 'autoprefixer', 'concat:libs-css',
     'clean:temp'
   ]);
 
