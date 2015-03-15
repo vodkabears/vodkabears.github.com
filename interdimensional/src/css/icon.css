@@ -51,16 +51,6 @@
   background-image: url("../img/icon-of-scrolling.svg");
 }
 
-@keyframes icon-of-scrolling-keyframes {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
 @media only screen and (min-width : 768px) {
   .icon {
     width: 54px;

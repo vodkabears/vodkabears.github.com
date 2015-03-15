@@ -58,7 +58,7 @@
   margin-left: 0;
 }
 
-.fs-section-content div i {
+.fs-section-content .icon {
   will-change: opacity;
 }
 
@@ -70,7 +70,6 @@
   left: 0;
 
   content: "";
-  animation: fs-section-cosmic-keyframes 10s 1s ease-in-out infinite;
 
   background: url(../img/fs-section-cosmic-480x800.jpg) no-repeat;
   background-position: left bottom;
@@ -151,6 +150,14 @@
   .fs-section-content h2 {
     font-size: 50px;
     font-weight: 100;
+  }
+}
+
+@media only screen and (min-width : 1025px) {
+  .fs-section.cosmic:before {
+    animation: fs-section-cosmic-keyframes 10s 1s ease-in-out infinite;
+
+    will-change: filter;
   }
 }
 

@@ -8,7 +8,10 @@ import Notification from './notification';
 var interdimensionalControl;
 
 document.addEventListener('DOMContentLoaded', function() {
-  new WOW().init();
+  new WOW({
+    mobile: false,
+    live: false
+  }).init();
   Interdimensional.charge();
 }, false);
 
