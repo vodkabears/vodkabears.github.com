@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     mobile: false,
     live: false
   }).init();
-  Interdimensional.charge();
+  Interdimensional.charge({
+    PPD: 1,
+    insensitivity: 3
+  });
 }, false);
 
 document.addEventListener('interdimensional:charge', function interdimensionalChargeListener() {
