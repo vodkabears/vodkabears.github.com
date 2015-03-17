@@ -179,6 +179,10 @@ a:hover, a:active {
     text-decoration: none;
 }
 
+#noty_bottomRight_layout_container {
+    z-index: 1000 !important;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -286,6 +290,12 @@ a:hover, a:active {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-height: 400px) {
+    #noty_bottomRight_layout_container {
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 48.063em) {
     .hide-for-small {
