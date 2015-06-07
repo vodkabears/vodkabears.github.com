@@ -1,9 +1,12 @@
 .social-buttons {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 0;
 
   display: none;
+  overflow: hidden;
+
+  width: 171px;
 }
 
 @media only screen and (min-width: 600px) {
