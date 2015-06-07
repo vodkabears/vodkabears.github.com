@@ -1,3 +1,13 @@
 .social-buttons {
-  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .github-ribbon {
+    display: block;
+  }
 }
