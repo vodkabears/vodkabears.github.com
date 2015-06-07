@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "jquery": "^1.11.3",
-    "remodal": "https://github.com/VodkaBears/Remodal.git#dev"
+    "remodal": "^1.0.0"
   }
 }
