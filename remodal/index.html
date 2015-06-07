@@ -1,95 +1,72 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
+<!doctype html>
+<!--[if IE 8]>         <html lang="en" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
     <meta charset="utf-8">
-    <title>Remodal</title>
-    <meta property="og:title" content="Remodal" />
-    <meta property="og:description" content="Flat, responsive, lightweight, easy customizable modal window jquery plugin with declarative state notation and hash tracking." />
-    <meta property="og:image" content="http://vodkabears.github.io/remodal/icon.png" />
-    <meta name="description" content="Flat, responsive, lightweight, easy customizable modal window jquery plugin with declarative state notation and hash tracking.">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/jquery.remodal.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Remodal v1. The modal done right.</title>
+    <meta name="description" content="Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.">
+    <meta property="og:title" content="Remodal">
+    <meta property="og:description" content="Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.">
+    <meta property="og:image" content="http://vodkabears.github.io/remodal/icon.png">
+    <meta property="og:url" content="http://vodkabears.github.io/remodal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Exo+2:300,700'>
+    <link rel="stylesheet" href="build/css/bundle.css">
     <link rel="image_src" href="icon.png">
-</head>
-<body>
-<div class="center-container remodal-bg">
-    <a class="github-ribbon" href="https://github.com/VodkaBears/Remodal"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
-    <div class="center-block">
-        <div class="hide-for-small">
-            <h1>Remodal</h1>
-            <p>
-                Flat, responsive, lightweight, easy customizable modal window plugin
-                with declarative state notation and hash tracking.
-            </p>
+  </head>
+  <body class="page">
+
+    <div class="page__container remodal-bg">
+      <div class="github-ribbon">
+        <a href="https://github.com/VodkaBears/Remodal/fork" target="_blank">Fork me on GitHub</a>
+      </div>
+      <div class="page__centre">
+        <div class="intro">
+          <h1 class="intro__logo">Remodal</h1>
+          <p class="intro__description">
+            Responsive, lightweight, fast, synchronized with CSS animations,
+            fully customizable modal window plugin with declarative configuration and hash tracking.
+          </p>
+          <div class="intro__links">
+            <a class="link link--highlighted" href="#modal">Show</a>
+            <a class="link" href="https://github.com/VodkaBears/Remodal/releases/latest" target="_blank">Download</a>
+            <a class="link" href="https://github.com/VodkaBears/Remodal#remodal" target="_blank">Docs</a>
+            <a class="link" href="https://twitter.com/vodkabears" target="_blank">Twitter</a>
+          </div>
         </div>
-        <br>
-        <p>
-            <a class="show_button" href="#show">Show</a>
+      </div>
+    </div>
+
+    <div class="remodal" data-remodal-id="modal" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <div>
+        <h2 id="modalTitle">Remodal v1</h2>
+        <p id="modalDesc">
+          The modal done right.<br>
+          Tell a man, tell another man, tell the next man.
         </p>
-        <br>
-        <p>
-            <a href="https://github.com/VodkaBears/Remodal/releases/latest">Download</a>
-            &nbsp;&nbsp;
-            <a href="https://github.com/VodkaBears/Remodal#readme">Docs</a>
-        </p>
+        <!-- <br><br>
+        <div class="social-buttons">
+          <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvodkabears.github.io%2Fremodal%2F&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=20&amp;appId=251211131726821&amp;locale=en_US" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width: 48px; height:20px;" allowTransparency="true"></iframe>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://vodkabears.github.io/remodal/" data-text="Remodal v1. The modal done right." data-via="vodkabears" data-count="none">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <iframe src="http://ghbtns.com/github-btn.html?user=vodkabears&repo=Interdimensional&type=watch&count=false" allowtransparency="true" frameborder="0" scrolling="0" width="50px" height="20px"></iframe>
+        </div> -->
+      </div>
+      <br>
+      <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
     </div>
-</div>
 
-<div class="remodal" data-remodal-id="show">
-    <h1>Remodal</h1>
-    <p>
-        Flat, responsive, lightweight, fast, easy customizable modal window jquery plugin
-        with declarative state notation and hash tracking.
-    </p>
-    <div>
-        <a href="https://twitter.com/vodkabears" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @vodkabears</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <br>
-        <iframe src="http://ghbtns.com/github-btn.html?user=VodkaBears&repo=Remodal&type=watch&size=large"
-                allowtransparency="true" frameborder="0" scrolling="0" width="75" height="30"></iframe>
-    </div>
-    <div>
-        <!-- AddThis Button BEGIN -->
-        <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4dd797b06396480a"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
-        <script type="text/javascript">var addthis_config = {"data_track_addressbar":false, "data_track_clickback": false };</script>
-        <script type="text/javascript">var addthis_share = {"url": "http://vodkabears.github.io/remodal/"};</script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dd797b06396480a"></script>
-        <!-- AddThis Button END -->
-    </div>
-    <br><br>
-    <a class="remodal-confirm" href="#">OK</a>
-</div>
+    <script src="build/js/bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="js/jquery.remodal.min.js"></script>
-<script src="js/jquery.noty.packaged.min.js"></script>
-<script>
-  noty({
-    text: '<div style="text-align: center;"><a target="_blank" href="http://vodkabears.github.io/interdimensional/">Interdimensional. Check it out!</a></div>',
-    type: 'alert',
-    theme: 'relax',
-    layout: 'bottomRight',
-    closeWith: []
-  });
-</script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-40540506-3', 'vodkabears.github.io');
-    ga('send', 'pageview');
-</script>
-</body>
+      ga('create', 'UA-40540506-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>

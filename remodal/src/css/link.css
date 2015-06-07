@@ -1,0 +1,11 @@
+.link {
+  color: #95a5a6;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.link--highlighted {
+  color: #ef5350;
+}

@@ -1,0 +1,42 @@
+.github-ribbon {
+  line-height: 30px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  overflow: hidden;
+
+  width: 160px;
+  height: 160px;
+}
+
+.github-ribbon a {
+  font-weight: bold;
+
+  position: absolute;
+  top: 45px;
+  left: -55px;
+
+  width: 160px;
+  padding: 5px 40px;
+
+  transition: background 0.2s;
+  transform: rotate(-45deg);
+  text-align: center;
+  text-decoration: none;
+
+  color: #fff;
+  background: rgba(239, 83, 80, 0.8);
+}
+
+.github-ribbon a:hover {
+  background: rgba(239, 83, 80, 1);
+}
+
+@media only screen and (min-width: 600px) {
+  .github-ribbon {
+    display: block;
+  }
+}

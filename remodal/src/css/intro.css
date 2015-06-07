@@ -1,0 +1,35 @@
+.intro__logo {
+  display: inline-block;
+  overflow: hidden;
+
+  width: 150px;
+  height: 44px;
+  margin: 0 0 23px;
+
+  cursor: pointer;
+  white-space: nowrap;
+  text-indent: 100%;
+
+  background: url(../img/intro__logo.png) no-repeat;
+  background-size: cover;
+}
+
+.intro__description {
+  line-height: 22px;
+
+  margin: 0 0 23px;
+}
+
+.intro__links .link {
+  margin-left: 15px;
+}
+
+.intro__links .link:first-child {
+  margin-left: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .intro__logo {
+    background-image: url(../img/intro__logo@2x.png);
+  }
+}
