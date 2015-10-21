@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "jquery": "^1.11.3",
-    "remodal": "^1.0.0"
+    "remodal": "^1.0.4"
   }
 }
